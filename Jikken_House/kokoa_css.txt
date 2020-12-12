@@ -1,0 +1,29 @@
+li.voice-state:not([data-reactid*="538467786868129804"]) { display:none; }
+.avatar {
+content:url(https://cdn.discordapp.com/attachments/772343757290995712/787130337586184242/KokoaClosed2.png);
+height:auto !important;
+width:auto !important;
+border-radius:0% !important;
+filter: brightness(50%);
+}
+
+.speaking {
+border-color:rgba(0,0,0,0) !important;
+position:relative;
+animation-name: speak-now;
+animation-duration: 1s;
+animation-fill-mode:forwards;
+filter: brightness(100%);
+content:url(https://cdn.discordapp.com/attachments/772343757290995712/787130355483410462/KokoaOpen2.png);
+}
+
+@keyframes speak-now {
+0% { bottom:0px; }
+15% { bottom:10px; }
+30% { bottom:0px; }
+}
+
+li.voice-state{ position: static; }
+div.user{ position: absolute; left:40%; bottom:5%; }
+
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
